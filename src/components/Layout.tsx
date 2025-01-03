@@ -1,5 +1,4 @@
 import Navbar from './Navbar/Navbar'
-import hero from '../assets/images/hero.jpg'
 import iphone2 from '../assets/images/iphone2.jpg'
 import { NavBarLinksType } from '@/types/types'
 
@@ -173,7 +172,6 @@ function Layout() {
   return (
     <>
         <div className='flex'>
-    
             <Navbar {...navBarLinks}/>
             <div className='h-[570px]'>
               <img src={iphone2} alt="" className='w-full h-full object-cover' />
