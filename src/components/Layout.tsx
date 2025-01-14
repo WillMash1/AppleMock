@@ -1,6 +1,7 @@
 import Navbar from './Navbar/Navbar'
 import iphone2 from '../assets/images/iphone2.jpg'
 import { NavBarLinksType } from '@/types/types'
+import ProductCard, { ProductCardProps } from './ProductCard/ProductCard';
 
 function Layout() {
   const navBarLinks: NavBarLinksType = {
@@ -168,14 +169,22 @@ function Layout() {
       ]
 
   } ;
+
+  const cardProps: ProductCardProps = {
+    title: 'iPhone 16 Pro',
+    subtitle: 'Hello, Apple Intelligence.',
+    imageSrc: iphone2,
+    size: {},
+  }
   
   return (
     <>
         <div className='flex'>
             <Navbar {...navBarLinks}/>
-            <div className='h-[570px]'>
+            {/* <div className='h-[570px]'>
               <img src={iphone2} alt="" className='w-full h-full object-cover' />
-            </div>
+            </div> */}
+            <ProductCard imageSrc={cardProps.imageSrc} size={cardProps.size} subtitle={cardProps.subtitle} title={cardProps.title}/>
         </div>
     </>
   )

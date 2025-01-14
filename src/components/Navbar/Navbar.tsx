@@ -31,14 +31,14 @@ function Navbar(navbarLinks: NavBarLinksType) {
           ))}
         </ul>
         {showSublink && links[sublinkIndex] && links[sublinkIndex].subLinksData && (
-          <div className={'flex ' + (showSublink ? ' h-auto transition-all ease-in-out ' : ' h-0 ' ) }>
+          <div className={'flex ' + (showSublink ? ' h-auto transition-all ease-in-out m-12 ml-0' : ' h-0 ' ) }>
               {
                 links[sublinkIndex].subLinksData.map((sublinkDataSet, index) => (
                   <ul key={index}>
-                    <h1 className="ml-4 opacity-80">{sublinkDataSet.title }</h1>
+                    <h1 className="ml-4 mb-4 opacity-80">{sublinkDataSet.title }</h1>
                     {sublinkDataSet.sublinks.map((sublink, sublinkIndex) => (
                         <li
-                          className={ (index===0 ? 'text-bold text-lg text-green' : 'text-md') +  'text-white cursor-pointer  ml-4 mr-4 mt-4 mb-4 hover:text-white'}
+                          className={ (index===0 ? ' text-2xl text-green' : 'text-md') +  'text-bold text-white cursor-pointer  ml-4 mr-4 mt-2 mb-2 hover:text-white'}
                           key={sublinkIndex}
                         >
                           {sublink}

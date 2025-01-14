@@ -6,6 +6,6 @@ nav {
     line-height: 1;
     color:rgb(255, 255, 255, .8);
     white-space: nowrap;
-    background-color: rgba(22, 22, 23, .8);
+    background-color: rgba(22, 22, 23, 1);
     backdrop-filter: saturate(180%), blur(20px);
   }
