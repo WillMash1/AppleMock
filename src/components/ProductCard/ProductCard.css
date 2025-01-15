@@ -1,0 +1,21 @@
+.productCard {
+    background-image: url('../../assets/images/iphone2.jpg');
+    object-fit: cover;
+    background-position: center;  
+}
+    
+      
+    
+.spacer {
+    height: 200px;
+    margin: 0 0 -200px 0;
+    /* margin: 20px 0 -50px 0; use this if you want #container to have a 'bottom padding', in this case of 20px */
+    background: transparent; /* you'll need this if #container's parent element has a different background from #container itself */ 
+}
+    
+      
+    
+.btn {
+ /* border-radius: 25px; */
+   padding:  0.25rem 1rem;
+}
