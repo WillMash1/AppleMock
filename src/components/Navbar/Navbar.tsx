@@ -10,15 +10,15 @@ function Navbar(navbarLinks: NavBarLinksType) {
   const enterFunc = (event: React.MouseEvent<HTMLLIElement, MouseEvent>
   )=> {
     if(event) {
-      const target:HTMLElement = event.target as HTMLElement;
+      const target: HTMLElement = event.target as HTMLElement;
       setsublinkIndex(Number(target.getAttribute('data-index')));
     }
     setShowSublink(true);
   }
   return (
-    <nav onMouseLeave={() => setShowSublink(false)} className="w-full min-h-[6vh] z-50 fixed transition-all ease-in-out">
+    <nav onMouseLeave={() => setShowSublink(false)} className="w-full z-50 h-min transition-all ease-in-out">
       <div className="w-full flex flex-col">
-        <div className="w-fit m-auto  ">
+        <div className="w-fit m-auto">
         <ul className="flex m-auto">
         <li className="ml-4 mr-4 ">
           <svg fill="#ffffff" height="44" viewBox="0 0 14 44" width="14" xmlns="http://www.w3.org/2000/svg">

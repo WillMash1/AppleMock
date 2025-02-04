@@ -1,5 +1,5 @@
 .productCard {
-    background-image: url('../../assets/images/iphone2.jpg');
+    /* background-image: url('../../assets/images/iphone2.jpg'); */
     object-fit: cover;
     background-position: center;  
 }

@@ -1,5 +1,6 @@
 import Navbar from './Navbar/Navbar'
 import iphone2 from '../assets/images/iphone2.jpg'
+import iphoneBlue from '../assets/images/products/iphoneBlue.jpg'
 import { NavBarLinksType } from '@/types/types'
 import ProductCard, { ProductCardProps } from './ProductCard/ProductCard';
 
@@ -176,15 +177,27 @@ function Layout() {
     imageSrc: iphone2,
     size: {},
   }
+
+  const secondCardProps: ProductCardProps = {
+    title: 'iPhone 16 Pro',
+    subtitle: 'Hello, Apple Intelligence.',
+    imageSrc: iphoneBlue,
+    size: {},
+  }
   
   return (
     <>
-        <div className='flex'>
+        <div className='flex flex-col'>
             <Navbar {...navBarLinks}/>
             {/* <div className='h-[570px]'>
               <img src={iphone2} alt="" className='w-full h-full object-cover' />
             </div> */}
-            <ProductCard imageSrc={cardProps.imageSrc} size={cardProps.size} subtitle={cardProps.subtitle} title={cardProps.title}/>
+
+            <div className='flex flex-col w-full'>
+              <ProductCard imageSrc={cardProps.imageSrc} size={cardProps.size} subtitle={cardProps.subtitle} title={cardProps.title}/>
+              <ProductCard imageSrc={secondCardProps.imageSrc} size={secondCardProps.size} subtitle={secondCardProps.subtitle} title={secondCardProps.title}/>
+            </div>
+        
         </div>
     </>
   )
